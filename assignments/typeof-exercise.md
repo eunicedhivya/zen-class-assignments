@@ -1,0 +1,9 @@
+- typeof(1): Is a number.
+- typeof(1.1): Is a number.
+- typeof('1.1'): Is a string (plain text).
+- typeof(true): Is a boolean (used to check if something is true or false)
+- typeof(null): Is an object (its an empty value)
+- typeof(undefined): Is undefined (it means no value has been assigned).
+- typeof([]): Is an object (Used as to create arrays).
+- typeof({}): Is an object (Used to create JSON objects).
+- typeof(NaN): Abbreviation expands to Not a Number. Its technically identified as a number though used to represent values that are not numbers during an operation

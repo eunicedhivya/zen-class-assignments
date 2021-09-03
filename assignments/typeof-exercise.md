@@ -6,4 +6,4 @@
 - typeof(undefined): Is undefined (it means no value has been assigned).
 - typeof([]): Is an object (Used as to create arrays).
 - typeof({}): Is an object (Used to create JSON objects).
-- typeof(NaN): Abbreviation expands to Not a Number. Its technically identified as a number though used to represent values that are not numbers during an operation
+- typeof(NaN): Abbreviation expands to Not a Number. Its technically identified as a number though used to represent values that are not numbers during mathematical operation.

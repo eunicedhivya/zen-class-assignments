@@ -87,9 +87,9 @@ class Circle{
 
 let circle1 = new Circle(10, "blue");
 
-// console.log(circle1.toString())
-// console.log(circle1.getArea())
-// console.log(circle1.getCircumference())
+console.log(circle1.toString())
+console.log(circle1.getArea())
+console.log(circle1.getCircumference())
 
 
 // Write a “person” class to hold all the details.

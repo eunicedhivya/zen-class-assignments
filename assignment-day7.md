@@ -1,5 +1,7 @@
 # Day 7 - Assignments
 
+### Task 1: Create class called Movie
+
 ```
 // Create class called Movie
 // =========================================================
@@ -48,7 +50,11 @@ console.log("movie1.rating", movie1.rating);
 Output:
 ![My image](output/task-movie.JPG)
 
-###
+<hr>
+
+### Task 2: Convert UML diagram to Class Circle
+
+note: By default in JavaScript all all class instance properties and methods are public indicated by + icon in the image
 
 ```
 class Circle{
@@ -89,8 +95,60 @@ class Circle{
 }
 
 let circle1 = new Circle(10, "blue");
+
 ```
 
+<hr>
+
+### Task 3: Write a “person” class to hold all the details.
+
+```
+class Person{
+    constructor(firstname, lastname, age, occupation){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.occupation = occupation;
+    }
+}
+
+var Divi = new Person("Divi", "Seed", 30, "Designer");
+
+```
+
+<hr>
+
+### Task 4: Write a class to calculate uber price.
+
+```
+class uberCalculator{
+    constructor(timeOfRide, rideDistance){
+        // Fixed Components in Pricing Component
+        this.baseFare = 60;
+        this.costPerMin = 3;
+        this.costPerMile = 6;
+        this.bookingFee = 30;
+
+        // Components that change based on uber ride
+        this.timeOfRide = timeOfRide;
+        this.rideDistance = rideDistance;
+    }
+
+    getUberCost(){
+
+        // Base Fare + ((Cost per minute x time of the ride) + (cost per mile x ride distance) x surge boost multiplier) + booking fee = Passengers Ride Fare
+
+        let calcPrice = this.baseFare + ((this.costPerMin * this.timeOfRide) + (this.costPerMile * this.rideDistance)) + this.bookingFee;
+
+        return calcPrice;
+    }
+}
+
+let Uber1 = new uberCalculator(10, 4, 25);
+console.log("Uber1.getUberCost()", Uber1.getUberCost())
+```
+
+<hr>
 ### Reference
 
 - https://dev.to/boobo94/uber-cost-algorithm-j2n

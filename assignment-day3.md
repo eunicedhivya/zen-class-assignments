@@ -2,6 +2,69 @@
 
 ### For the given JSON iterate over all for loops (for, for in, for of, forEach)
 
+```
+
+// Set up our HTTP request
+// var dataForLoop = null;
+var xhr = new XMLHttpRequest();
+
+// Setup our listener to process completed requests
+xhr.onload = function () {
+  // Process our return data
+  if (xhr.status >= 200 && xhr.status < 300) {
+    // Runs when the request is successful
+    var t = JSON.parse(this.response);
+    forLoop(t)
+  } else {
+    // Runs when it's not
+    console.log(xhr.responseText);
+  }
+};
+
+// Create and send a GET request
+// The first argument is the post type (GET, POST, PUT, DELETE, etc.)
+// The second argument is the endpoint URL
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.send();
+
+
+
+function forLoop(dataForLoop){
+  //  =======================================================
+  // Run For Loop to iterate through array of objects
+  //  =======================================================
+  for(let i=0; i<dataForLoop.length; i++){
+    console.log("forloop", dataForLoop[i])
+    //  =======================================================
+    //  For in Loop
+    //  =======================================================
+    for (x in dataForLoop[i]) {
+      console.log("ForIn =============>", x,":", dataForLoop[i][x])
+
+      if(x === "borders"){
+        //  =======================================================
+        //  For of Loop
+        //  =======================================================
+        for (let xVal of dataForLoop[i][x]) {
+          console.log("ForOf Loop =============>",xVal)
+        }
+      }else if(x === "altSpellings"){
+         //  =======================================================
+          //  ForEach Loop
+          //  =======================================================
+          dataForLoop[i][x].forEach(function(tObj){
+            console.log("ForEach Loop =============>", tObj);
+          });
+      }
+    }
+  }
+}
+
+```
+
+Output:
+![My image](output/allForLoops.JPG)
+
 <hr>
 
 ### Create your own resume data in JSON format

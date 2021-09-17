@@ -46,7 +46,7 @@ console.log("movie1.rating", movie1.rating);
 ```
 
 Output:
-[My image](eunicedhivya/zen-class-assignments/blob/day7/output/task-movie.JPG)
+![My image](output/task-movie.JPG)
 
 ### Reference
 

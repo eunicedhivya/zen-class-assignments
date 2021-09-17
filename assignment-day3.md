@@ -1,6 +1,6 @@
 # Day 3 - Assignment
 
-### For the given JSON iterate over all for loops (for, for in, for of, forEach)
+### Task 1: For the given JSON iterate over all for loops (for, for in, for of, forEach)
 
 ```
 
@@ -67,7 +67,7 @@ Output:
 
 <hr>
 
-### Create your own resume data in JSON format
+### Task 2: Create your own resume data in JSON format
 
 ```
 let resume = {
@@ -101,7 +101,7 @@ let resume = {
 
 <hr>
 
-### Read about the difference between window, screen and document in javascript
+### Task 3: Read about the difference between window, screen and document in javascript
 
 Window: its the root of webpage containing the document structure. Its a global variable. eg., A Tab in the Browser
 

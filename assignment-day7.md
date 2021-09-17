@@ -46,7 +46,7 @@ console.log("movie1.rating", movie1.rating);
 ```
 
 Output:
-[My image](username.github.com/repository/img/image.jpg)
+![My image](output/task-movie.JPG)
 
 ###
 

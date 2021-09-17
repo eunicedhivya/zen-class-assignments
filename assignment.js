@@ -31,17 +31,17 @@ allMovies.newMovie(new Movie("A Dog's Journey", "Eon Productions", "PG­13"));
 allMovies.newMovie(new Movie("Die Hard", "Eon Productions", "R"));
 
 
-console.log('Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned array need not be full.');
-console.log(allMovies.getPG());
+// console.log('Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned array need not be full.');
+// console.log(allMovies.getPG());
 
 // Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”
 let movie1 = new Movie("Casino Royale", "Eon Productions", "PG­13");
 
 // call out the properties
-console.log("Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”");
-console.log("movie1.title", movie1.title);
-console.log("movie1.studio", movie1.studio);
-console.log("movie1.rating", movie1.rating);
+// console.log("Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”");
+// console.log("movie1.title", movie1.title);
+// console.log("movie1.studio", movie1.studio);
+// console.log("movie1.rating", movie1.rating);
 
 
 // Convert UML diagram to Class Circle

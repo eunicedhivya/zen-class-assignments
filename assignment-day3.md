@@ -2,6 +2,8 @@
 
 ### For the given JSON iterate over all for loops (for, for in, for of, forEach)
 
+<hr>
+
 ### Create your own resume data in JSON format
 
 ```
@@ -34,4 +36,12 @@ let resume = {
 
 ```
 
+<hr>
+
 ### Read about the difference between window, screen and document in javascript
+
+Window: its the root of webpage containing the document structure. Its a global variable. eg., A Tab in the Browser
+
+Document: Contains the DOM structure. Its found inside the Window
+
+Screen: Holds information about the browser screen eg., display screen width, height, colorDepth, pixelDepth

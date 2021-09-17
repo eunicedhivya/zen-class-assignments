@@ -11,6 +11,7 @@
 | Requires a lot of optimization for performance                                                                | Eliminates the requirement for Optimization Hacks                                                               |
 
 <hr>
+
 ### Task 2: Scripting language vs Programming language
 
 | Scripting Languages                            | Programming Languages                                                     |
@@ -21,6 +22,7 @@
 
 
 <hr>
+
 ### Task 3: The difference between Statically typed and Dynamically typed languages
 
 | Statically Typed Language                                        | Dynamically Typed Language                                             |

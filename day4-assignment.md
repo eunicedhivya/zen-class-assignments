@@ -157,3 +157,7 @@ var objC1 = { name: "Person 1", age:5 };
 var objC2 = { age:5, name: "Person 1" };
 console.log(JSON.stringify(objC1) === JSON.stringify(objC2)) // false because even if content is same the order of content defers
 ```
+
+<hr>
+
+## Task 2: Simple Programs todo for variables

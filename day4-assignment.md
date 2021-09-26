@@ -312,3 +312,147 @@ let mathGrade = 8
 ### Output:
 
 ![Output4](output/operators-practice.JPG)
+
+## Task 3: Simple Programs todo for Condition , Looping and Arrays
+
+### 1. Write a loop that makes seven calls to console.log to output the following triangle:
+
+expected output
+
+```
+// #
+// ##
+// ###
+// ####
+// #####
+// ######
+// #######
+```
+
+```
+console.log("Write a loop that makes seven calls to console.log to output the following triangle:");
+let myHash = "#"
+for(let i=1; i<= 7; i++){
+  // use repeat method
+  console.log(myHash.repeat(i))
+}
+```
+
+### 2. Iterate through the string array and print it contents
+
+```
+console.log("Iterate through the string array and print it contents:");
+var strArray= ["<option>Jazz</option>",
+      ,"<option>Blues</option>",
+      ,"<option>New Age</option>",
+      ,"<option>Classical</option>",
+      ,"<option>Opera</option>"]
+
+strArray.forEach(function(str){
+  console.log(str)
+});
+```
+
+### 3. Write a code to count the elements in the array . Don’t use length property
+
+```
+var myarray=[11,22,33,44,55]
+let myArrLen = 0;
+while(myarray[myArrLen] !== undefined){
+  myArrLen++;
+}
+
+console.log("Count the elements in the array w/o length property", myArrLen)
+```
+
+### 4. Create an array called foods holds the names of your top 20 favorite foods, starting with the best food.
+
+let foods=["Pizza", "Fried Rice", "Hamburger", "Soup", "Caesar Salad", "Hash Browns", "Baked Potato", "Fried Chicken", "Grilled Cheese", "French Fries", "Mashed Potatoes", "Cheese Cake", "Chocolate Truffle Cakes", "Waffles", "Ice Cream", "Lemon Sorbet", "Muffins", "Croissant", "Egg puff", "Chicken puff" ]
+
+- How can you find your fifth favorite food?
+
+```
+// use square notation and number 5-1 because index starts at 0
+console.log("Fifth favorite food", foods[4]);
+```
+
+- Find the length of your foods array
+
+```
+console.log("length of food array is", foods.length);
+```
+
+### 5. Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+
+```
+console.log("Change the element that is currently “Mari” to “Munnabai”")
+let friends = [ "Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+console.log("original friends variable", friends);
+function changeItemName(input){
+  for (var i = 0; i < input.length; i++) {
+    if(input[i] === "Mari"){
+      input[i] = "Munnabai"
+    }
+  }
+}
+changeItemName(friends);
+
+console.log("Changed friends variable", friends);
+console.log("");
+```
+
+### 6. Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+
+```
+let friends2 = [ "Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+function meetCaptian(input){
+  for (var i = 0; i < input.length; i++) {
+    if(input[i] !== "CaptianAmerica"){
+      console.log(input[i]);
+    }else{
+      break;
+    }
+
+  }
+}
+
+console.log("Print the names till you meet CaptianAmerica.");
+meetCaptian(friends2);
+```
+
+### Find the person is ur friend or not.
+
+```
+let friends3 = [ "Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+function findFriend(input, name){
+  for (var i = 0; i < input.length; i++) {
+      if(input[i] === name){
+        return input[i];
+      }
+  }
+}
+let found = findFriend(friends3,"Jeff");
+console.log("Found", found);
+```
+
+### We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
+
+```
+
+var friendsOne = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friendsTwo = [ "Gabbar","Rajinikanth","Mass","Spiderman","Jeff","ET"];
+function dataHandling(input1, input2){
+//Your code goes here
+  let temp2 = input1.concat(input2)
+  return temp2.sort();
+}
+let sortedandCombined = dataHandling(friendsOne, friendsTwo);
+
+console.log("Combined alphabetically-sorted list")
+console.log(sortedandCombined)
+
+```
+
+### output
+
+![Output4](output/loop-practice-1.JPG)

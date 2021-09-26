@@ -122,8 +122,8 @@ function displayCountrieRegionsData(data){
 // Task 2: Simple Programs todo for Operators
 // ========================================================
 
-// Square of a number = 3
-console.log(3 ** 2)
+// Square of a number = 3 using ** operator
+console.log("Square of a number =", 3 ** 2)
 
 // ========================================================
 
@@ -146,38 +146,83 @@ console.log(`After: a = ${NumA}, b = ${NumB}`)
 // ========================================================
 
 // Addition of 3 numbers
-console.log("Addition of 3 numbers", 3 + 3 + 3);
+console.log("Addition of 3 numbers =", 3 + 3 + 3);
 
 
 // Celsius to Fahrenheit conversion 10 to 50
 let cel = 10;
 let cel2Fah = cel * 9/5 + 32 ;
+console.log("Celsius to Fahrenheit =", cel2Fah);
 
 // Meter to miles meter / 1609
+let met = 10;
+let met2miles = met / 1609 ;
+console.log("Meter to miles =", met2miles);
 
 // Pounds to kg pound  / 2.205
+let pd = 10;
+let pd2kg = pd / 2.205 ;
+console.log("Pounds to kg =", pd2kg);
 
 // Calculate Batting Average
 // Calculate five test scores and print their average
 // Power of any number x ^ y. 
+let x = 12, y = 3;
+console.log(`Power of x ^ y eg., ${x} ^ ${y} is ${x ** y}`);
 
 // Calculate Simple Interest (p * r * t)/100
-
+let p = 1000, r = 5, t= 1; // Principal value, Rate of Interest, Time (year)
+let si = (p * r * t)/100;
+console.log("Simple Interest =", si);
 
 // Calculate area of an equilateral triangle
+let es = 10; // side of triangle
+let areaEqTriangle = Math.sqrt(3)/4*(es**2);
+console.log("Area of an equilateral triangle =", areaEqTriangle);
+
 // Area Of Isosceles Triangle
+let ib = 10, ih = 20; // base of triangle, height of triangle
+let areaIsTriangle = (ib * ih) / 2;
+console.log("Area of an Isosceles triangle =", areaIsTriangle);
+
 // Volume Of Sphere
+let sR = 10;
+let volSphere = (4 / 3) * Math.PI * (sR ** 3);
+console.log("Volume Of Sphere =", volSphere);
+
 // Volume Of Prism
+let pBA = 10, pL = 11; // base Area of prism, length of prism
+let volPrism =  pBA * pL;
+console.log("Volume Of Prism =", volPrism);
+
 // Find area of a triangle.
-// Give the Actual cost and Sold cost, Calculate Discount Of Product
+let tB = 20, tH = 12; // base of triangle, height of triangle
+let areaTriangle = (tB * tH) / 2;
+console.log("Area of a triangle =", areaTriangle);
+
 // Given their radius of a circle and find its diameter, circumference and area.
+let cR = 10;
+let cD = 10 * 2;
+let circumference = 2 * Math.PI * cR;
+let areaCircle = Math.PI * (cR ** 2); 
+
+console.log("Circumference of a circle of r(10) =", areaTriangle);
+console.log("Area of a circle of r(10) =", areaCircle);
+
 // Given two numbers and perform all arithmetic operations.
-// Display the asterisk pattern as shown below(No loop needed):
-// *****
-// *****
-// *****
-// *****
-// *****
+let numOne = 10, numTwo = 3;
+console.log("Given two numbers and perform all arithmetic operations.");
+console.log("Addition =", numOne + numTwo);
+console.log("Multiply =", numOne * numTwo);
+console.log("Subtract =", numOne - numTwo);
+console.log("Division =", numOne / numTwo);
+console.log("Remainder =", numOne % numTwo);
+
 // Calculate electricity bill?
 // For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
-// Program To Calculate CGPA
+let kW = 0.1, time = 1, costPerUnit = 10;
+let energyPerDay = kW * 1;
+let energyPerMonth = energyPerDay * 30;
+let energyCostMonth = energyPerMonth * costPerUnit;
+console.log(`electricity bill = ₹${energyCostMonth}`);
+ let mathGrade = 8

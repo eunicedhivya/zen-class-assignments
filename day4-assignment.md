@@ -456,3 +456,151 @@ console.log(sortedandCombined)
 ### output
 
 ![Output4](output/loop-practice-1.JPG)
+
+<hr>
+
+### Get the first item, the middle item and the last item of the array
+
+```
+console.log("Get the first item, the middle item and the last item of the array");
+let friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+console.log("first item", friends[0]);
+console.log("middle item", friends[friends.length/2]);
+console.log("last item", friends[friends.length-1]);
+console.log("");
+```
+
+### Add your name to the end of the friends array, and add another name to beginning.
+
+```
+console.log("Add your name to the end of the friends array (Dhivya), and add another name to beginning (Archie).");
+friends.push("Dhivya")
+friends.unshift("Archie")
+console.log(friends);
+console.log("");
+```
+
+### Add Mr or Ms to the names in the friends array.
+
+```
+
+console.log("Add Mr or Ms to the names in the friends array.");
+for(let i=0; i<friends.length; i++){
+  if(friends[i] === "MaryJane" || friends[i] === "Dhivya"){
+    friends[i] = "Ms. "+friends[i]
+  }else{
+    friends[i] = "Mr. "+friends[i]
+  }
+}
+
+console.log(friends);
+```
+
+### Concat all the names the friends array and return as comma “,” seperated string.
+
+```
+console.log("Concat all the names the friends array and return as comma “,” seperated string.");
+let strComma = "";
+for(let i=0; i<friends.length; i++){
+  if(i !== friends.length-1){
+    strComma += friends[i] + ", "
+  }else{
+    strComma += friends[i]
+  }
+
+}
+console.log(strComma);
+console.log("");
+```
+
+### Find the friends names who has letter ‘a’ and return the list.
+
+```
+console.log("Find the friends names who has letter ‘a’ and return the list.");
+function returnA(input){
+  let strWA = [];
+  for(let i=0; i<input.length; i++){
+    if(input[i].includes("a")){
+      strWA.push(input[i])
+    }
+  }
+  return strWA;
+}
+```
+
+### Find the friends names who has letter ‘a’ and return the list.
+
+```
+console.log("Find the friends names who has letter ‘a’ and return the list.");
+function returnA(input){
+  let strWA = [];
+  for(let i=0; i<input.length; i++){
+    if(input[i].includes("a")){
+      strWA.push(input[i])
+    }
+  }
+  return strWA;
+}
+let storeStrWA = returnA(friends);
+console.log(storeStrWA);
+```
+
+### Find the avg length of all the friends names. Get the individual length of the names and do the avg.
+
+```
+console.log("Find the friends names who has letter ‘a’ and return the list.");
+
+let getSumofNames = 0;
+for(let i=0; i<friends.length; i++){
+  getSumofNames += friends[i].length;
+}
+
+console.log("avg", getSumofNames/friends.length);
+```
+
+### Find the names and return the list starting with letter M.
+
+```
+console.log("Find the names and return the list starting with letter M.");
+let friends2Filter = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+
+let namesStartingWM = friends2Filter.filter(function(obj){
+  return obj.startsWith("M");
+})
+
+console.log(namesStartingWM);
+```
+
+### Find the name with max characters and return the name.
+
+```
+console.log("Find the name with max characters and return the name.");
+let maxLengthCounter = 0;
+let maxWord;
+for (let i = 0; i < friends.length; i++) {
+  if (friends[i].length > maxLengthCounter) {
+    maxLengthCounter = friends[i].length;
+    maxWord = friends[i];
+  }
+}
+console.log(`the word with max characters is ${maxWord} with ${maxLengthCounter} characters`);
+```
+
+### Find the name with min characters and return the name.
+
+```
+console.log("Find the name with min characters and return the name.");
+let minLengthCounter = friends[0].length;
+let minWord;
+for (let i = 0; i < friends.length; i++) {
+
+  if(friends[i].length < minLengthCounter){
+    minLengthCounter = friends[i].length;
+    minWord = friends[i];
+    // console.log(minWord, minLengthCounter);
+  }
+}
+console.log(`the word with min characters is ${minWord} with ${minLengthCounter} characters`);
+```
+
+![day4-practice-part2](output/day4-practice-part2.JPG)

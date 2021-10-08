@@ -79,7 +79,21 @@
 
 ---
 
-3. Design a contact us form with all fields as required.
+### 3. Design a contact us form with all fields as required.
+
+```
+<form>
+
+  <label for="fname">First Name</label>
+  <input type="text" /> <br>
+  <label for="lname">Email</label>
+  <input type="text" />  <br>
+  <label for="subject">Message</label>  <br>
+  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  <input type="submit" value="Submit">
+
+</form>
+```
 
 ---
 
@@ -140,7 +154,7 @@
 
 ---
 
-5. Create an element that helps you to open the https://google.com in separate new tab.
+### 5. Create an element that helps you to open the https://google.com in separate new tab.
 
 ```
 <a href="https://google.com/" target="_blank">Click Me</a>
@@ -148,11 +162,133 @@
 
 ---
 
-6. In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+### 6. In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+
+```
+<form>
+
+        <label for="fname">First Name</label>
+        <input type="text" /> <br>
+        <label for="lname">Email</label>
+        <input type="text" />  <br>
+        <label for="subject">Message</label>  <br>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <fieldset>
+            <legend>Employee type</legend>
+            <input type="radio" id="salaried" name="salaried" value="salaried">
+            <label for="salaried">Salaried</label><br>
+            <input type="radio" id="Own-Business" name="Own-Business" value="Own Business">
+            <label for="Own-Business">Own business</label><br>
+
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Submit">
+
+      </form>
+```
 
 ---
 
-7. Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
+### 7. Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
+
+```
+<style>
+        #magazine-subscription-form {
+            border: 1px solid black;
+            width: 450px;
+            padding: 10px 20px;
+        }
+        #magazine-subscription-form h2{
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+        #magazine-subscription-form .row {
+            margin: 0 0 10px 0;
+            display: flex;
+            column-gap: 30px;
+        }
+        #subscribe {
+            /* display: flex; */
+        }
+        #subscribe label, #subscribe input, .mag{
+            display: inline-block;
+            width: fit-content !important;
+        }
+        #magazine-subscription-form .col, #magazine-subscription-form .col input {
+            width: 100%;
+        }
+        #magazine-subscription-form .col input {
+            border:none;
+            border-bottom: 1px solid black;
+            font-family: cursive;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .form-head{
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+    <form id="magazine-subscription-form">
+        <h2 class="form-head">Yes! I want to subscribe to <span>Mag-O-Zine</span></h2>
+        <div class="row">
+            <div class="col">
+                <input type="text" name="fname" id="fname" value="Joe" /> <br>
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col">
+                <input type="text" name="lname" id="lname" value="Black"  /> <br>
+                <label for="lname">Last Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" name="address" id="address"  value="1001 Washington Street" /> <br>
+                <label for="address">Address</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" name="city" id="city"  value="Washington" /> <br>
+                <label for="city">City</label>
+            </div>
+            <div class="col">
+                <input type="text" name="state" id="state" value="CA" /> <br>
+                <label for="state">State</label>
+            </div>
+            <div class="col">
+                <input type="text" name="zipcode" id="zipcode" value="99999" /> <br>
+                <label for="zipcode">Zipcode</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="subscribe">
+
+                <p style="font-weight:bold;">Subscribe for:</p>
+                <input type="checkbox" id="sub1" name="sub1">
+                <label for="vehicle1"> 1 Year($19.95)</label>
+
+                <input type="checkbox" id="sub2" name="sub2">
+                <label>2 Year($35.95) </label>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <p style="font-weight:bold;"> Send me more Information about: </p>
+                <input type="checkbox" class="mag" id="mag1" name="mag1"><label for="mag1"> Computer-zine</label> <br>
+                <input class="mag" type="checkbox" id="mag2" name="mag2" value="Car"><label for="mag2"> Fishing-zine</label> <br>
+                <input  class="mag"  type="checkbox" id="mag3" name="mag3" value="Boat"><label for="vehicle1"> Cat-O-zine</label>
+            </div>
+        </div>
+```
+
+** Output **
+![Magozine Form](output/magozine-form.JPG)
 
 ---
 
@@ -195,15 +331,45 @@
 </table>
 ```
 
+** Output **
+![Table](output/table.JPG)
+
 ---
 
 9. Write HTML input tags snippet to show default values for all Form elements.
+
+```
+<style>
+            input {
+                color:#888888;
+                margin-bottom: 15px;
+            }
+        </style>
+        <input type="checkbox" checked="checked"> Check box 1 <input type="checkbox"> Check box 2<br>
+        <input type="date"> <br>
+        <input type="email" value="your email goes here"> <br>
+        <input type="number" value="910"> <br>
+        <input type="password" value="**********"> <br>
+        <input type="radio" checked="checked"> Radio 1 <input type="radio"> Radio 2 <br>
+        <input type="tel" value="Add your country code +91"> <br>
+        <input type="text" value="text goes here"> <br>
+        <input type="textarea" value="text goes here"> <br>
+        <input type="date" value="2021-10-08">
+        <input type="submit" value="Submit">
+```
+
+** Output **
+![Form elements w/ default values](output/form-default-values.JPG)
 
 ---
 
 10. In your, HTML page add the below line and Highlight it without using any CSS.
 
 - "HTML & CSS is awesome"
+
+```
+<p bgcolor="red">HTML & CSS is awesome</p>
+```
 
 ---
 

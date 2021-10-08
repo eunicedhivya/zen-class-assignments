@@ -22,7 +22,7 @@
     </html>
 ```
 
-**_ Fixed Code _**
+**_ Fixed Code _** <br>
 
 ```
 <html lang="en">
@@ -287,7 +287,7 @@
         </div>
 ```
 
-** Output **
+** Output ** <br>
 ![Magozine Form](output/magozine-form.JPG)
 
 ---
@@ -331,7 +331,7 @@
 </table>
 ```
 
-** Output **
+** Output ** <br>
 ![Table](output/table.JPG)
 
 ---
@@ -358,7 +358,7 @@
         <input type="submit" value="Submit">
 ```
 
-** Output **
+** Output ** <br>
 ![Form elements w/ default values](output/form-default-values.JPG)
 
 ---
